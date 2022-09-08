@@ -30,6 +30,7 @@ public class Routes {
 //            route *= ma + i + 1;
 //            route /= i + 1;
         }
+        System.out.println(bigInteger);
         BigInteger bigInteger1 = new BigInteger(String.valueOf(m));
         BigInteger bigInteger3 = bigInteger.mod(bigInteger1);
         System.out.println(Integer.parseInt(String.valueOf(bigInteger3)));
