@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class print {
     public static void main(String[] args) {
-        print();
+        Print();
     }
 
-    public static void print() {
+    public static void Print() {
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();
         int height, width, length;
@@ -185,21 +185,3 @@ public class print {
         }
     }
 }
-
-//........+-+-+
-//......./././|
-//......+-+-+.+
-//...../././|/|
-//....+-+-+.+.+
-//.../././././.
-//..+-+-+.+.+.+
-//././././././.
-//+-+-+.+.+.+.+
-//|.|.|.|.|.|.|
-//+-+-+-+-+-+-+
-//|.|.|.|.|.|.|
-//+-+-+-+-+-+-+
-//|.|.|.|.|.|.|
-//+-+-+-+-+-+-+
-//|.|.|.|.|.|.|
-//+-+-+-+-+-+-+

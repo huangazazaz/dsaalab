@@ -7,7 +7,6 @@ public class AllIn {
     public static void main(String[] args) {
         System.out.println(allin());
     }
-
     public static String allin() {
         Scanner input = new Scanner(System.in);
         String dealer = input.next();
