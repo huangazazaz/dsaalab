@@ -20,12 +20,6 @@ public class Mahhjong {
             int[] charss = new int[9];
             int[] charsb = new int[9];
             int[] charsw = new int[9];
-//            for (int h = 0; h < 9; h++) {
-//                charss[h] = 0;
-//                charsb[h] = 0;
-//                charsz[h] = 0;
-//                charsw[h] = 0;
-//            }
             int z = 0, s = 0, b = 0, w = 0, q = 0;
             for (int l = 0; l < 14; l++) {
                 if (chars[2 * l + 1] == 'z') {
@@ -68,7 +62,6 @@ public class Mahhjong {
             }
         }
     }
-
     public static boolean win(int[] charss, int a, boolean tt) {
         int[] chars = Arrays.copyOf(charss, charss.length);
         if (a % 3 == 0) {
@@ -123,34 +116,3 @@ public class Mahhjong {
         return true;
     }
 }
-//            int s = 0, que = 0, t = 0;
-//            for (int j = 0; j < 14; ) {
-//                int k = 2 * j;
-//                if (k + 3 < 28 && chars[k + 1] == chars[k + 3]) {
-//                    if (chars[k] == chars[k + 2]) {
-//                        if (k + 5 < 28 && chars[k] == chars[k + 4] && chars[k + 1] == chars[k + 5]) {
-//                            j += 3;
-//                            t++;
-//                        } else {
-//                            j += 2;
-//                            que++;
-//                        }
-//                    } else if (chars[k] == chars[k + 2] - 1 && chars[k + 1] != 'z') {
-//                        if (k + 5 < 28 && chars[k] == chars[k + 4] - 2 && chars[k + 1] == chars[k + 5]) {
-//                            j += 3;
-//                            s++;
-//                        } else {
-//                            n[i] = false;
-//                            continue big;
-//                        }
-//                    } else {
-//                        n[i] = false;
-//                        continue big;
-//                    }
-//                } else {
-//                    n[i] = false;
-//                    continue big;
-//
-//                }
-//            }
-//            n[i] = que == 1 && t + s == 4;
