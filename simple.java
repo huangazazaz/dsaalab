@@ -6,8 +6,6 @@ public class simple {
     public static void main(String[] args) {
         SimpleSearch();
     }
-
-
     public static void SimpleSearch() {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
@@ -39,8 +37,6 @@ public class simple {
 
         }
     }
-
-
     public static int searchLeft(int[] nums, int target) {
         int left = 0, right = nums.length - 1, mid;
         while (left <= right) {
@@ -53,7 +49,6 @@ public class simple {
         }
         return right;
     }
-
     public static int searchRight(int[] nums, int target) {
         int left = 0, right = nums.length - 1, mid;
         while (left <= right) {
@@ -66,5 +61,4 @@ public class simple {
         }
         return left;
     }
-
 }
